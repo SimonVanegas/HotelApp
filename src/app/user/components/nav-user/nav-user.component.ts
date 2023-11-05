@@ -17,11 +17,6 @@ export class NavUserComponent {
       path:'/user/search-hotel'
     },
     {
-      title: 'Ver Reservas',
-      iconPath: 'assets/images/iconList.svg',
-      path:'/user/reserves'
-    },
-    {
       title: 'Salir',
       iconPath: 'assets/images/personExit.svg',
       path:'/login'
