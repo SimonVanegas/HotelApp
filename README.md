@@ -1,6 +1,9 @@
 # APPHOTELES
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+## Development json-Server
+
+Run `json-server --watch db.json`
 
 ## Development server
 
