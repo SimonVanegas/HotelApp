@@ -1,0 +1,207 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Hotel Maravilla",
+      "rooms": 250,
+      "movil": 5758909,
+      "location": "Cartagena",
+      "state": "Activo"
+    },
+    {
+      "id": 2,
+      "name": "Hotel Hogareño",
+      "rooms": 330,
+      "location": "Cali",
+      "movil": 5798909,
+      "state": "Inactivo"
+    },
+    {
+      "id": 3,
+      "name": "Hotel Prueba",
+      "rooms": 234,
+      "movil": 5789004,
+      "location": "Cali",
+      "state": "Activo"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "capacity": 3,
+      "price": 140000,
+      "tax": 23,
+      "state": "Activo"
+    },
+    {
+      "id": 2,
+      "name": "Estandar-Familiar",
+      "capacity": 5,
+      "price": 310000,
+      "tax": 23,
+      "state": "Activo"
+    },
+    {
+      "id": 3,
+      "name": "Queen-Estandar",
+      "capacity": 2,
+      "price": 190000,
+      "tax": 23,
+      "state": "Activo"
+    },
+    {
+      "id": 4,
+      "name": "Queen-Familiar",
+      "capacity": 5,
+      "price": 350000,
+      "tax": 23,
+      "state": "Activo"
+    },
+    {
+      "id": 5,
+      "name": "King-Estandar",
+      "capacity": 3,
+      "price": 250000,
+      "tax": 23,
+      "state": "Activo"
+    },
+    {
+      "id": 6,
+      "name": "King-Familiar",
+      "capacity": 6,
+      "price": 450000,
+      "tax": 23,
+      "state": "Activo"
+    }
+  ],
+  "reserves": [
+    {
+      "id": 12345,
+      "idUser": 123,
+      "hotel": 1,
+      "typeRoom": 6,
+      "dateIn": "06-12-2023",
+      "dateOut": "09-12-2023"
+    },
+    {
+      "id": 54321,
+      "idUser": 321,
+      "hotel": 2,
+      "typeRoom": 2,
+      "dateIn": "09-12-2023",
+      "dateOut": "19-12-2023"
+    },
+    {
+      "id": 67890,
+      "idUser": 987,
+      "hotel": 3,
+      "typeRoom": 1,
+      "dateIn": "06-11-2023",
+      "dateOut": "09-11-2023"
+    },
+    {
+      "id": 53453,
+      "idUser": 123,
+      "hotel": 1,
+      "typeRoom": 6,
+      "dateIn": "06-12-2023",
+      "dateOut": "09-12-2023"
+    },
+    {
+      "id": 56754,
+      "idUser": 321,
+      "hotel": 1,
+      "typeRoom": 2,
+      "dateIn": "09-12-2023",
+      "dateOut": "19-12-2023"
+    },
+    {
+      "id": 98697,
+      "idUser": 987,
+      "hotel": 3,
+      "typeRoom": 1,
+      "dateIn": "06-11-2023",
+      "dateOut": "09-11-2023"
+    },
+    {
+      "id": 63634,
+      "idUser": 123,
+      "hotel": 2,
+      "typeRoom": 6,
+      "dateIn": "06-12-2023",
+      "dateOut": "09-12-2023"
+    },
+    {
+      "id": 10677,
+      "idUser": 321,
+      "hotel": 3,
+      "typeRoom": 2,
+      "dateIn": "09-12-2023",
+      "dateOut": "19-12-2023"
+    },
+    {
+      "id": 24234,
+      "idUser": 987,
+      "hotel": 3,
+      "typeRoom": 1,
+      "dateIn": "06-11-2023",
+      "dateOut": "09-11-2023"
+    },
+    {
+      "id": 12345,
+      "idUser": 123,
+      "hotel": 1,
+      "typeRoom": 6,
+      "dateIn": "06-02-2023",
+      "dateOut": "09-10-2023"
+    },
+    {
+      "id": 23423,
+      "idUser": 321,
+      "hotel": 1,
+      "typeRoom": 2,
+      "dateIn": "09-10-2023",
+      "dateOut": "19-10-2023"
+    },
+    {
+      "id": 23497,
+      "idUser": 987,
+      "hotel": 2,
+      "typeRoom": 1,
+      "dateIn": "16-11-2023",
+      "dateOut": "19-11-2023"
+    }
+  ],
+  "users": [
+    {
+      "id": 123,
+      "typeId": "cedula",
+      "names": "Alejandro Ramirez",
+      "gender": "Masculino",
+      "email": "1saimonx7@gmail.com",
+      "cel": 3122311231,
+      "emergencyName": "Juanito Perez",
+      "emergencyCel": 312212332
+    },
+    {
+      "id": 321,
+      "typeId": "cedula",
+      "names": "Lorena Giraldo",
+      "gender": "Femenino",
+      "email": "1saimonx7@gmail.com",
+      "cel": 3122311231,
+      "emergencyName": "Juanito Perez",
+      "emergencyCel": 312212332
+    },
+    {
+      "id": 987,
+      "typeId": "cedula",
+      "names": "Sara Guisado",
+      "gender": "Femenino",
+      "email": "1saimonx7@gmail.com",
+      "cel": 3122311231,
+      "emergencyName": "Juanito Perez",
+      "emergencyCel": 312212332
+    }
+  ]
+}

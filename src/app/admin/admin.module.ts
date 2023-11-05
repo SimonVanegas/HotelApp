@@ -8,7 +8,7 @@ import { PageAdminComponent } from './page/page.component';
 import { UserRoleComponent } from './components/user-role/user-role.component';
 import { AdminHotelCreateComponent } from './components/admin-hotel-create/admin-hotel-create.component';
 import { AdminHotelEditComponent } from './components/admin-hotel-edit/admin-hotel-edit.component';
-import { AdminRoomCreateComponent } from './components/admin-rooms/admin-room-create.component';
+import { AdminRoomCreateComponent } from './components/admin-rooms-create/admin-room-create.component';
 import { ReserveListComponent } from './components/admin-reserve-list/reserve-list.component';
 
 @NgModule({

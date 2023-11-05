@@ -4,7 +4,7 @@
   <form [formGroup]="formCreateHotel" (ngSubmit)="guardarRespuestas()" class="formCreateUser">
     <div class="flex-form">
       <label class="text-form" for="id">Id:</label>
-      <input class="label-form" type="text" id="id" formControlName="id">
+      <input class="label-form" type="number" id="id" formControlName="id">
     </div>
     <div class="flex-form">
       <label class="text-form" for="name">Nombre:</label>
@@ -20,13 +20,13 @@
     </div>
     <div class="flex-form">
       <label class="text-form" for="movil">Telefono:</label>
-      <input class="label-form" type="text" id="movil" formControlName="movil">
+      <input class="label-form" type="number" id="movil" formControlName="movil">
     </div>
     <div class="flex-form">
       <label class="text-form" for="state">Estado Hotel:</label>
       <select class="label-form" id="state" formControlName="state">
-        <option value="1">Activo</option>
-        <option value="2">Inactivo</option>
+        <option value="Activo">Activo</option>
+        <option value="Inactivo">Inactivo</option>
       </select>
     </div>
     <div class="btn-flex">

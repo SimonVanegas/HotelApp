@@ -21,6 +21,7 @@ th, td {
 .btn{
   background-color: #001a49;
   color: #ecece8;
+  min-width: 110px;
   border-radius: 12px;
   padding: 4px 16px;
   cursor: pointer;

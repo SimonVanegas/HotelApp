@@ -1,0 +1,19 @@
+<div id="sidebar" class="container-menu">
+  <div class="logo-content">
+    <h3 class="title-logo">HOTELS</h3>
+  </div>
+  <ul class="options">
+    <div *ngFor="let menuItem of menuItems; let i = index">
+      <div class="option-flex">
+        <img [src]="menuItem.iconPath" class="icon-users" alt="">
+        <ng-container *ngIf="menuItem.path">
+          <li class="option" (click)="toggleSubOptions(i)" [routerLink]="[menuItem.path]" >
+            {{ menuItem.title }}
+          </li>
+        </ng-container>
+
+
+      </div>
+    </div>
+  </ul>
+</div>

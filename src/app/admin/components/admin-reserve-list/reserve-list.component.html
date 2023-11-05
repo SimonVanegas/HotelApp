@@ -1,27 +1,28 @@
 <div class="container">
-  <h3 class="title-option">Hoteles</h3>
+  <h3 class="title-option">Reservas</h3>
   <h4 class="subtitle-option">Lista</h4>
   <div class="cuadrado">
     <table>
       <thead>
         <tr>
-          <th>Cedula</th>
-          <th>Celular</th>
-          <th>Nombre</th>
-          <th>Habitaciones</th>
+          <th>Num. Reserva</th>
+          <th>Id. Usuario</th>
+          <th>Hotel</th>
+          <th>Fecha Llegada</th>
+          <th>Fecha Salida</th>
           <th>Ubicacion</th>
-          <th>Estado</th>
+          <th></th>
         </tr>
       </thead>
-      <tbody>
-        <!-- Repite este bloque para cada persona en la lista -->
-        <tr *ngFor="let client of clients">
-          <td>{{ client.id }}</td>
-          <td>{{ client.carId }}</td>
-          <td>{{ client.name }}</td>
-          <td>{{ client.type }}</td>
-          <td>{{ client.date }}</td>
-          <td><button (click)="aceptarPersona(client.id)" class="btn">Aceptar</button></td>
+      <tbody *ngIf="reserves">
+        <tr *ngFor="let reserve of reserves">
+          <td>{{ reserve.id }}</td>
+          <td>{{ userName(reserve.idUser) }}</td>
+          <td>{{ hotelName(reserve.hotel) }}</td>
+          <td>{{ reserve.dateIn }}</td>
+          <td>{{ reserve.dateOut }}</td>
+          <td>{{ hotelLocation(reserve.hotel) }}</td>
+          <td><button (click)="showMore(reserve.id)" class="btn">Ver</button></td>
         </tr>
       </tbody>
     </table>
