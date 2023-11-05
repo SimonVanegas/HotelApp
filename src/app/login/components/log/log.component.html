@@ -3,10 +3,10 @@
       <h1 class="log__welcome">Bienvenido!!</h1>
       <h3>Inicia sesion para agendar alguno de nuesros servicios</h3>
   </div>
-  <form action="submit" class="log__form">
+  <form [formGroup]="formLogin" (ngSubmit)="comparedAns()" class="log__form">
       <h3>Login</h3>
-      <input type="text" class="input__form" placeholder="USUARIO">
-      <input type="text" class="input__form" placeholder="CONTRASEÑA">
-      <button class="btn__log" [routerLink]="['/admin']" >Login</button>
+      <input type="text" class="input__form" id="id" formControlName="id" placeholder="USUARIO">
+      <input type="text" class="input__form" id="password" formControlName="password" placeholder="CONTRASEÑA">
+      <button class="btn__log" >Login</button>
   </form>
 </div>

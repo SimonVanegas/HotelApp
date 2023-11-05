@@ -18,15 +18,31 @@
       <label class="text-form" for="city">Ciudad:</label>
       <input class="label-form" type="text" id="city" formControlName="city">
     </div>
-    <!-- <div class="flex-form">
-      <label class="text-form" for="state">Estado Hotel:</label>
-      <select class="label-form" id="state" formControlName="state">
-        <option value="Activo">Activo</option>
-        <option value="Inactivo">Inactivo</option>
-      </select>
-    </div> -->
-    <div class="btn-flex">
+    <div class="btn-flex-s">
       <button type="submit" class="cta">Guardar</button>
     </div>
   </form>
+  <div class="cuadrado" *ngIf="showlist">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Habitaciones Disponibles</th>
+          <th>Telefono</th>
+          <th>Ubicacion</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="showlist">
+        <tr *ngFor="let hotel of filteredHotels">
+          <td>{{ hotel.name }}</td>
+          <td>{{ hotel.rooms }}</td>
+          <td>{{ hotel.movil }}</td>
+          <td>{{ hotel.location }}</td>
+          <td><button (click)="showMore(hotel.id)" class="btn">Ver</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>

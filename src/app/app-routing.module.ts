@@ -23,7 +23,7 @@ const routes: Routes = [
   {path:'user', component:PageUserComponent,
   children:[
     {path:'search-hotel', component:UserHotelSearchComponent},
-    {path:'list-search', component:UserListSearchComponent}
+    {path:'list-search/:id', component:UserListSearchComponent}
   ]},
 
 ];

@@ -1,1 +1,44 @@
-<p>user-list-search works!</p>
+<div class="container">
+  <h3 class="title-option">Rerservar Hoteles</h3>
+  <h4 class="subtitle-option">Crear</h4>
+  <form [formGroup]="formCreateHotel" (ngSubmit)="guardarRespuestas()" class="formCreateUser">
+    <div class="flex-form">
+      <label class="text-form" for="id">Id Reserva:</label>
+      <input class="label-form" type="number" id="id" formControlName="id">
+    </div>
+    <div class="flex-form">
+      <label class="text-form" for="nameHotel">Nombre Hotel:</label>
+      <input class="label-form" type="text" id="nameHotel" formControlName="nameHotel">
+    </div>
+    <div class="flex-form">
+      <label class="text-form" for="idRoom">Habitaciones Disponibles:</label>
+      <select class="label-form" id="idRoom" formControlName="idRoom">
+        <option value="1">Estandar</option>
+        <option value="2">Estandar Familiar</option>
+        <option value="3">Queen Estandar</option>
+        <option value="4">Queen Familiar</option>
+        <option value="5">King Estandar</option>
+        <option value="6">King Familiar</option>
+      </select>
+    </div>
+    <div class="flex-form">
+      <label class="text-form" for="ubication">Ubicación:</label>
+      <input class="label-form" type="text" id="ubication" formControlName="ubication">
+    </div>
+    <div class="flex-form">
+      <label class="text-form" for="movil">Telefono:</label>
+      <input class="label-form" type="number" id="movil" formControlName="movil">
+    </div>
+    <div class="flex-form">
+      <label class="text-form" for="dateIn">Fecha Ida</label>
+      <input class="label-form" type="date" id="dateIn" formControlName="dateIn">
+    </div>
+    <div class="flex-form">
+      <label class="text-form" for="dateOut">Fecha Vuelta:</label>
+      <input class="label-form" type="date" id="dateOut" formControlName="dateOut">
+    </div>
+    <div class="btn-flex">
+      <button type="submit" class="cta">Guardar</button>
+    </div>
+  </form>
+</div>

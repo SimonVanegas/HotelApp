@@ -170,6 +170,14 @@
       "typeRoom": 1,
       "dateIn": "16-11-2023",
       "dateOut": "19-11-2023"
+    },
+    {
+      "id": 1,
+      "idUser": 123,
+      "hotel": 2,
+      "typeRoom": "2",
+      "dateIn": "2023-11-03",
+      "dateOut": "2023-11-18"
     }
   ],
   "users": [

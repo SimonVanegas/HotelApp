@@ -5,6 +5,7 @@ import { PageLoginComponent } from './page/page.component';
 import { NavComponent } from './components/nav/nav.component';
 import { LogComponent } from './components/log/log.component';
 import { RouterLink } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RouterLink } from '@angular/router';
     LogComponent
   ],
   imports: [
-    RouterLink
+    RouterLink,
+    ReactiveFormsModule
   ],
   exports: [
     PageLoginComponent
