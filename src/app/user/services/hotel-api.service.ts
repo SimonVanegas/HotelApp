@@ -8,7 +8,7 @@ import { Hotels } from '../interfaces/hotels';
 })
 export class HotelAPIService {
 
-  private apiUrl = 'http://localhost:3000/hotels';
+  private apiUrl = 'https://json-server-six-orpin.vercel.app/hotels';
 
   constructor(private http: HttpClient) {}
 
