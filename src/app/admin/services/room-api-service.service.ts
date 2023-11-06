@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RoomApiServiceService {
-  private apiUrl = 'http://localhost:3000/rooms';
+  private apiUrl = 'https://json-server-six-orpin.vercel.app/rooms';
 
   constructor(private http: HttpClient) {}
 
